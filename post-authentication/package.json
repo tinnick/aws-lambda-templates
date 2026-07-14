@@ -10,16 +10,20 @@
   "scripts": {
     "build": "tsc",
     "pretest": "npm run build",
-    "test": "node --test dist/test/**/*.test.js"
+    "test": "node --test dist/test/**/*.test.js",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.600.0",
     "@aws-sdk/client-ssm": "^3.600.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/aws-lambda": "^8.10.145",
     "@types/node": "^20.14.0",
+    "eslint": "^10.7.0",
     "husky": "^9.1.7",
-    "typescript": "^5.5.0"
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.64.0"
   }
 }
