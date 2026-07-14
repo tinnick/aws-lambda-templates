@@ -1,0 +1,21 @@
+{
+  "name": "pre-token-generation",
+  "version": "1.0.0",
+  "description": "Cognito Pre Token Generation (V2) Lambda trigger",
+  "main": "dist/src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "pretest": "npm run build",
+    "test": "node --test dist/test/**/*.test.js"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^20.14.0",
+    "husky": "^9.1.7",
+    "typescript": "^5.5.0"
+  }
+}
